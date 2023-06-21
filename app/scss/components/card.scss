@@ -1,0 +1,76 @@
+.card {
+  background: $white;
+  display: flex;
+  border-radius: 10px;
+  width: 600px;
+  height: 450px;
+  overflow: hidden;
+
+  &-img {
+    width: 300px;
+    height: 450px;
+    object-fit: contain;
+  }
+
+  &-content {
+    padding: 32px;
+
+    &-subtitle {
+      @include subtitle(12px, 5px);
+    }
+
+    &-title {
+      @include heading($dark);
+      margin: 20px 0 24px;
+    }
+
+    &-desc {
+      @include paragraf;
+    }
+
+    &-price {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      margin: 29px 0 30px;
+
+      .discount {
+        @include heading($bg-primary);
+      }
+
+      .normal {
+        @include subtitle(13px, 0);
+      }
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      background: $bg-primary;
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin: 0;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background: #1a4032;
+      }
+
+      &-icon {
+        width: 14px;
+        height: 16px;
+      }
+
+      &-text {
+        font-family: $font-secondary;
+        font-size: 14px;
+        font-weight: 700;
+        color: $white;
+      }
+    }
+  }
+}

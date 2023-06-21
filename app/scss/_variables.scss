@@ -1,0 +1,17 @@
+// Fonts
+$font-primary: 'Fraunces', serif;
+$font-secondary: 'Montserrat', sans-serif;
+
+// Colors
+$dark: #1C232B;
+$light: #6C7289;
+$white: #ffffff;
+$bg-primary: #3D8168;
+$bg-secondary: #F2EAE2;
+
+// Breakpoints
+$breakpoints: (
+  'mobile'  : ( max-width:  767px ),
+  'tablet'  : ( max-width:  992px ),
+  'desktop' : ( max-width:  1200px )
+) !default;
