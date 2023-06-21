@@ -1,0 +1,28 @@
+{
+  "name": "fm-product-preview-card-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --update --style=expanded app/scss:dist/css",
+    "sass-prod": "sass --no-source-map --style=compressed app/scss:dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kariz-dev/fm-product-preview-card-component.git"
+  },
+  "keywords": [
+    "scss",
+    "frontendmentor"
+  ],
+  "author": "Muhammad Rizwan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kariz-dev/fm-product-preview-card-component/issues"
+  },
+  "homepage": "https://github.com/kariz-dev/fm-product-preview-card-component#readme",
+  "devDependencies": {
+    "sass": "^1.63.5"
+  }
+}
