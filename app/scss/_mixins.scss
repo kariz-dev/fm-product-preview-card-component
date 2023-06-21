@@ -1,0 +1,25 @@
+// Fonts
+@mixin heading ($color) {
+  font-family: $font-primary;
+  color: $color;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+@mixin subtitle ($size: 12px, $spacing) {
+  font-family: $font-secondary;
+  color: $light;
+  font-size: $size;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: $spacing;
+}
+
+@mixin paragraf {
+  font-family: $font-secondary;
+  color: $light;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
+}
