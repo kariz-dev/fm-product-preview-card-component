@@ -97,6 +97,7 @@ main#app {
   padding-top: 15px;
   padding-bottom: 15px;
   margin: 0;
+  border: none;
   border-radius: 8px;
   cursor: pointer;
 }
