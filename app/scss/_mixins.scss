@@ -1,5 +1,5 @@
 // Fonts
-@mixin heading ($color) {
+@mixin heading($color) {
   font-family: $font-primary;
   color: $color;
   font-size: 32px;
@@ -7,7 +7,7 @@
   line-height: 1em;
 }
 
-@mixin subtitle ($size: 12px, $spacing) {
+@mixin subtitle($size: 12px, $spacing) {
   font-family: $font-secondary;
   color: $light;
   font-size: $size;
@@ -22,4 +22,21 @@
   font-size: 14px;
   line-height: 23px;
   font-weight: 400;
+}
+
+// Breakpoint
+@mixin media($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
 }
